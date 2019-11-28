@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/15 12:49:14 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/10/02 19:06:32 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/11/28 16:16:07 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,33 @@
 
 # include "Libft/libft.h"
 # include <stdarg.h>
+# include <stddef.h>
+# include <stdint.h>
+# include <limits.h>
+
+typedef union			u_data
+{
+	char				*str_;
+	bool				bool_;
+	signed char			char_;
+	signed short		short_;
+	signed int			int_;
+	signed long			long_;
+	signed long long	long_long_;
+	unsigned char		uchar_;
+	unsigned short		ushort_;
+	unsigned int		uint_;
+	unsigned long		ulong_;
+	unsigned long long	ulong_long_;
+	double				double_;
+	long double			long_double_;
+	intmax_t			intmax_;
+	uintmax_t			uintmax_;
+	intptr_t			intptr_;
+	uintptr_t			uintptr_;
+	ptrdiff_t			ptrdiff_;
+	size_t				size_;
+}						t_data;
 
 typedef struct	s_format_info
 {

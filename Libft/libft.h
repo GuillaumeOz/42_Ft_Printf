@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 15:28:26 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/09/18 17:14:10 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/11/28 18:14:13 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
-//# include <string.h> forbidden for printf project
-# include "stdint_42.h"
+# include <stdbool.h>
 
 # define BUFF_SIZE 10
 
@@ -23,16 +22,13 @@
 # define STDOUT 1
 # define STDERR 2
 
-# define INT_MAX 2147483647
-# define INT_MIN -2147483648
-
 # define BINARY_BASE "01"
 # define OCTAL_BASE "01234567"
 # define DECIMAL_BASE "0123456789"
 # define HEX_LOWER_BASE "0123456789abcdef"
 # define HEX_UPPER_BASE "0123456789ABCDEF"
 
-# define ISPRINT(c) (c >= 32 && c <= 126)
+# define ISPRINT(c) (c >= 32 && c <= 126)//define parametrique a supprimer
 
 # define SENTINAL 1
 # define NONE (-1)

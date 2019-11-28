@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 11:57:43 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/09/16 13:29:18 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/11/28 18:14:14 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_valid_base(char *base_str)
 	while (base_str[++i])
 	{
 		count = 0;
-		if (!ISPRINT(base_str[i]))
+		if (!(ft_isprint(base_str[i])))
 			return (0);
 		if (base_str[i] == '+' || base_str[i] == '-')
 			return (0);
