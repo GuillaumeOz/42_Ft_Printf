@@ -6,7 +6,7 @@
 #    By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/06 15:28:16 by gozsertt          #+#    #+#              #
-#    Updated: 2019/09/18 16:21:57 by gozsertt         ###   ########.fr        #
+#    Updated: 2019/12/02 18:51:16 by gozsertt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -157,4 +157,4 @@ WHITE = "\033[1;37m"
 
 # — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
-.PHONY: all clean fclean re nc nh na
+.PHONY: all clean fclean #re nc nh na

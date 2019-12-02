@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   x_handler.c                                        :+:      :+:    :+:   */
+/*   xx_handler.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/28 18:23:43 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/12/02 19:11:05 by gozsertt         ###   ########.fr       */
+/*   Created: 2019/12/02 18:47:30 by gozsertt          #+#    #+#             */
+/*   Updated: 2019/12/02 19:12:22 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-char	*x_handler(t_format format, t_data arg)
+char	*xx_handler(t_format format, t_data arg)
 {
 	intmax_t	temp;
 	char		*intstr;
@@ -26,7 +26,7 @@ char	*x_handler(t_format format, t_data arg)
 	{
 		temp = (temp < 0) ? ~temp + 1 : temp;
 		intstr = ft_strappend(intstr,
-			ft_utoa_base(temp, HEX_LOWER_BASE, format.precision), 1, 1);
+			ft_utoa_base(temp, HEX_UPPER_BASE, format.precision), 1, 1);
 		format.width -= ft_strlen(intstr) +
 			(format.flags & HASH && temp) ? 2 : 0;
 	}

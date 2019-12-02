@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/15 12:49:14 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 16:16:07 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/02 18:52:57 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ enum	e_lengths
 {
 	HH = sizeof(char),
 	H = sizeof(short),
-	L = sizeof(long int),
+	L = sizeof(int),
 	LL = sizeof(long long int),
 	LLL = sizeof(long double),
 	IU_MAX = sizeof(intmax_t),
@@ -104,7 +104,7 @@ int32_t		parse_precision(const char *format, va_list *args, int8_t *i);
 int8_t		parse_length(const char *format, int8_t *i);
 int8_t		parse_specifier(const char *format, int8_t *i);
 
-# define SPECIFIERS "csrpiufodxXb%"
+# define SPECIFIERS "cspiuodxX%"
 
 char		*style_handler(t_format format, char *fstr);
 char		*mod_handler(t_format format, t_data arg);
@@ -115,5 +115,7 @@ char		*d_handler(t_format format, t_data arg);
 char		*i_handler(t_format format, t_data arg);
 char		*o_handler(t_format format, t_data arg);
 char		*u_handler(t_format format, t_data arg);
+char		*x_handler(t_format format, t_data arg);
+char		*xx_handler(t_format format, t_data arg);
 
 #endif

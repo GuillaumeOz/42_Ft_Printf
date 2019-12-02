@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 14:45:53 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 20:10:04 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/02 18:54:19 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,8 @@ t_handler g_table_ft_printf[] =
 	{ 'i', &i_handler },// test the edge case printf("%.0d", 0); , test without HSAH Flag format.precision == 0 && temp == 0 && !(format.flags & HASH)
 	{ 'o', &o_handler },
 	{ 'u', &u_handler },
-/*
 	{ 'x', &x_handler },
 	{ 'X', &xx_handler },
-
-XXXXXX
-	{ 'f', &f_handler },
-	{ 'b', &b_handler },
-	{ 'r', &r_handler },
-XXXXXX SUPPR THIS PART
-*/
 	{ '\0', NULL }
 };
 

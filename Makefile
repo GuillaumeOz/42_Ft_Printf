@@ -6,7 +6,7 @@
 #    By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/15 16:10:16 by gozsertt          #+#    #+#              #
-#    Updated: 2019/10/02 18:42:50 by gozsertt         ###   ########.fr        #
+#    Updated: 2019/12/02 18:52:12 by gozsertt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,8 @@ PLUGINS     =	Handlers/style_handler.c									\
 				Handlers/i_handler.c										\
 				Handlers/o_handler.c										\
 				Handlers/u_handler.c										\
+				Handlers/x_handler.c										\
+				Handlers/xx_handler.c										\
 
 OBJECTS		=	$(SOURCES:.c=.o)
 
