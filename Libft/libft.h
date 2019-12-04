@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 15:28:26 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 18:14:13 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/04 11:49:41 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@
 # define DECIMAL_BASE "0123456789"
 # define HEX_LOWER_BASE "0123456789abcdef"
 # define HEX_UPPER_BASE "0123456789ABCDEF"
-
-# define ISPRINT(c) (c >= 32 && c <= 126)//define parametrique a supprimer
 
 # define SENTINAL 1
 # define NONE (-1)
