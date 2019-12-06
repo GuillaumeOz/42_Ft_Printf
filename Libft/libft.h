@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 15:28:26 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/12/04 11:49:41 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 11:31:06 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@
 # define HEX_UPPER_BASE "0123456789ABCDEF"
 
 # define SENTINAL 1
-# define NONE (-1)
+# define CHARACTER 1
+# define NONE -1
 
 typedef struct	s_list
 {
@@ -91,7 +92,7 @@ char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 
 int				ft_valid_base(char *base_str);
-size_t			ft_uintmaxlen_base(uintmax_t n , unsigned int base);
+size_t			ft_uintmaxlen_base(uintmax_t n, unsigned int base);
 char			*ft_itoa(int n);
 char			*ft_utoa_base(uintmax_t n, char *base, int precision);
 

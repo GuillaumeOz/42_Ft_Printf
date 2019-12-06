@@ -6,13 +6,13 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 19:56:33 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 14:10:13 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 11:37:43 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int8_t	parse_flags(const char *format, int8_t *i)
+int8_t		parse_flags(const char *format, int8_t *i)
 {
 	int8_t	flags;
 
@@ -23,14 +23,14 @@ int8_t	parse_flags(const char *format, int8_t *i)
 			flags |= PLUS;
 		else if (format[*i] == '-')
 			flags |= MINUS;
-		else if (format [*i] == ' ')
+		else if (format[*i] == ' ')
 			flags |= SPACE;
-		else if (format [*i] == '#')
+		else if (format[*i] == '#')
 			flags |= HASH;
-		else if (format [*i] == '0')
+		else if (format[*i] == '0')
 			flags |= ZERO;
 		else
-			break;
+			break ;
 		(*i)++;
 	}
 	return (flags);
@@ -74,17 +74,17 @@ int32_t		parse_precision(const char *format, va_list *args, int8_t *i)
 			if (precision)
 				(*i) += ft_intlen(precision);
 		}
-		return(precision);
+		return (precision);
 	}
 	return (NONE);
 }
 
-int8_t	parse_length(const char *format, int8_t *i)
+int8_t		parse_length(const char *format, int8_t *i)
 {
 	(*i) += 2;
 	if (format[(*i) - 2] == 'h' && format[(*i) - 1] == 'h')
 		return (HH);
-	else if (format[(*i) - 2] == 'l' && format [(*i) - 1] == 'l')
+	else if (format[(*i) - 2] == 'l' && format[(*i) - 1] == 'l')
 		return (LL);
 	(*i) -= 1;
 	if (format[(*i) - 1] == 'h')
@@ -103,7 +103,7 @@ int8_t	parse_length(const char *format, int8_t *i)
 	return (NONE);
 }
 
-int8_t	parse_specifier(const char *format, int8_t *i)
+int8_t		parse_specifier(const char *format, int8_t *i)
 {
 	if (ft_ischarset(format[*i], SPECIFIERS))
 	{

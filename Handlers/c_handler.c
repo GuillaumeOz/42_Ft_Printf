@@ -6,13 +6,11 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/01 19:30:54 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/09/12 16:49:13 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 11:37:44 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-
-#define CHARACTER 1
 
 char	*c_handler(t_format format, t_data arg)
 {
@@ -22,7 +20,7 @@ char	*c_handler(t_format format, t_data arg)
 	if (format.width)
 		format.width -= CHARACTER;
 	len = CHARACTER + format.width;
-	if (!( charstr = (char*)malloc(sizeof(char) * (len + SENTINAL))))
+	if (!(charstr = (char*)malloc(sizeof(char) * (len + SENTINAL))))
 		exit(-1);
 	if (!format.width || (format.width && format.flags & MINUS))
 		charstr[0] = arg.char_;
@@ -33,5 +31,5 @@ char	*c_handler(t_format format, t_data arg)
 		(format.flags & MINUS) ?
 			ft_memset(charstr + 1, format.pad, format.width) :
 			ft_memset(charstr, format.pad, format.width);
-	return(charstr);
+	return (charstr);
 }

@@ -6,7 +6,7 @@
 #    By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/15 16:10:16 by gozsertt          #+#    #+#              #
-#    Updated: 2019/12/02 18:52:12 by gozsertt         ###   ########.fr        #
+#    Updated: 2019/12/06 12:33:58 by gozsertt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,73 +92,4 @@ nc :
 
 na : nh nc
 
-correction:
-
-	@echo '==============================================================='
-	@echo && echo $(GREEN) "I - Checking Author File:" && echo $(WHITE);
-	@sleep 1
-	cat auteur
-	@echo
-	@sleep 1
-
-	@echo '==============================================================='
-	@echo && echo $(GREEN) "II - Checking Norme:" && echo $(WHITE);
-
-	@sleep 1
-	@echo && echo $(GREEN) "a - Checking Norme -- Header Files:" && echo $(WHITE);
-	@sleep 1
-	@norminette $(shell find . -name  '*.h')
-	@echo
-
-	@sleep 1
-	@echo && echo $(GREEN) "b - Checking Norme -- Source Files:" && echo $(WHITE);
-	@sleep 1
-	@norminette $(shell find . -name '*.c')
-	@echo
-
-	@echo '==============================================================='
-	@sleep 1
-	@echo && echo $(GREEN) "III - Checking Compilation:" && echo $(WHITE);
-	@sleep 1
-	@echo 'make all'
-	@echo
-	@sleep 1
-	@make all
-	@sleep 1
-	@sleep 1
-	@echo
-
-	@echo '==============================================================='
-	@echo && echo $(GREEN) "a - make clean" && echo $(WHITE);
-	@sleep 1
-	@echo 'Current working directory:'
-	@echo
-	@sleep 1
-	@echo 'ls -1'
-	@echo
-	@sleep 1
-	@ls -1
-	@echo
-	@sleep 1
-	@echo
-
-	@echo '==============================================================='
-	@echo && echo $(GREEN) "b - make fclean" && echo $(WHITE);
-	@sleep 1
-	@echo 'make fclean'
-	@echo
-	@make fclean
-	@sleep 1
-	@sleep 1
-	@ls -1
-	@echo
-	@sleep 1
-	@echo
-
-	@echo '==============================================================='
-	@echo && echo $(GREEN) "V - Explain code/approach" && echo $(WHITE);
-	@echo $(GREEN) "VI - Q&A" && echo $(WHITE);
-	@echo '==============================================================='
-	@echo
-
-.PHONY : all clean fclean re nc nh na correction
+.PHONY : all clean fclean re nc nh na

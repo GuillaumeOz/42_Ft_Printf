@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 11:28:14 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 17:52:08 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 11:44:07 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*i_handler(t_format format, t_data arg)
 	temp = (format.length < L) ? arg.int_ : arg.intmax_;
 	sign = (temp < 0);
 	intstr = ft_strdup("");
-	if (!(format.precision == 0  && temp == 0))
+	if (!(format.precision == 0 && temp == 0))
 	{
 		temp = temp < 0 ? -temp : temp;
 		intstr = ft_strappend(

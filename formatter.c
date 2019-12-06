@@ -6,13 +6,13 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 14:45:53 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/12/02 18:54:19 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 12:34:06 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char	*apply_width(t_format format, char *str)
+char		*apply_width(t_format format, char *str)
 {
 	return (
 		(format.flags & MINUS) ?
@@ -20,14 +20,14 @@ char	*apply_width(t_format format, char *str)
 			ft_strprepend(str, ft_padding(format.width, format.pad), 1, 1));
 }
 
-t_handler g_table_ft_printf[] =
+t_handler g_tbl_printf[] =
 {
 	{ '%', &mod_handler },
 	{ 'c', &c_handler },
 	{ 's', &s_handler },
 	{ 'p', &p_handler },
 	{ 'd', &d_handler },
-	{ 'i', &i_handler },// test the edge case printf("%.0d", 0); , test without HSAH Flag format.precision == 0 && temp == 0 && !(format.flags & HASH)
+	{ 'i', &i_handler },
 	{ 'o', &o_handler },
 	{ 'u', &u_handler },
 	{ 'x', &x_handler },
@@ -103,7 +103,7 @@ t_format	parse_format(const char *format, va_list *args)
 	return (info);
 }
 
-char	*formatter(const char **format, va_list *args, size_t *len)
+char		*formatter(const char **format, va_list *args, size_t *len)
 {
 	t_format	info;
 	t_data		arg;
@@ -119,10 +119,10 @@ char	*formatter(const char **format, va_list *args, size_t *len)
 		if (info.specifier != '%')
 			arg = extract_argument(info, args);
 		i = -1;
-		while (g_table_ft_printf[++i].specifier != '\0')
-			if (info.specifier == g_table_ft_printf[i].specifier)
+		while (g_tbl_printf[++i].specifier != '\0')
+			if (info.specifier == g_tbl_printf[i].specifier)
 			{
-				fstr = style_handler(info, g_table_ft_printf[i].handler(info, arg));
+				fstr = style_handler(info, g_tbl_printf[i].handler(info, arg));
 				break ;
 			}
 	}

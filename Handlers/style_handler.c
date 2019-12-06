@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/01 18:49:09 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/09/20 13:01:26 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/06 11:50:32 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char	*style_handler(t_format format, char *string)
 			}
 	}
 	free(format.style);
-	style = ft_strappend(style, "m", 1 ,0);
+	style = ft_strappend(style, "m", 1, 0);
 	string = ft_strprepend(string, style, 1, 1);
 	return (ft_strappend(string, "\033[0m", 1, 0));
 }
