@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/25 17:13:17 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/10/02 18:14:03 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/11 14:14:41 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*o_handler(t_format format, t_data arg)
 {
-	intmax_t	temp;
+	uintmax_t	temp;
 	char		*intstr;
 
 	if (format.length < L && format.length != NONE)

@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 14:45:53 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/12/06 12:34:06 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/11 13:38:46 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,14 @@ t_data		extract_argument(t_format format, va_list *args)
 	{
 		arg.double_ = va_arg(*args, double);
 	}
-	else
+	else if (format.specifier == 'd' || format.specifier == 'i' ||
+		format.specifier == 'c')
 	{
 		arg.intmax_ = va_arg(*args, intmax_t);
+	}
+	else
+	{
+		arg.uintmax_ = va_arg(*args, uintmax_t);
 	}
 	return (arg);
 }

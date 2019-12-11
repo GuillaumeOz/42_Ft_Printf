@@ -6,7 +6,7 @@
 /*   By: gozsertt <gozsertt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 18:14:47 by gozsertt          #+#    #+#             */
-/*   Updated: 2019/11/28 17:57:15 by gozsertt         ###   ########.fr       */
+/*   Updated: 2019/12/11 13:59:23 by gozsertt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 char	*u_handler(t_format format, t_data arg)
 {
-	intmax_t	temp;
+	uintmax_t	temp;
 	char		*intstr;
 
-	temp = (format.length < L && format.length != NONE) ?
-		arg.uint_ :
-		arg.uintmax_;
+	if (format.length < L && format.length != NONE)
+		temp = (format.length == HH) ? arg.uchar_ : arg.ushort_;
+	else
+		temp = (format.length == NONE) ? arg.uint_ : arg.uintmax_;
 	intstr = ft_strdup("");
 	if (!(format.precision == 0 && temp == 0))
 	{
