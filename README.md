@@ -198,6 +198,8 @@ L Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F,
 
 ![README_src/size_for_printf.png](Ft_printf/size_for_printf.png)
 
+<img src=\"./README_src/size_for_printf.png\" style=\"margin: 0; vertical-align: bottom;\">\n",
+
 ### 3 - [.precision] - Spécification de précision
 
 Le champs de précision correspond au troisième champ facultatif, il se compose d'un point (.) suivi d'un entier décimal non négatif qui, selon le type de conversion, spécifie le nombre de caractères de chaîne, le nombre de décimales ou le nombre de chiffres significatifs à générer.
