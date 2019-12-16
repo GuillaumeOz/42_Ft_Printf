@@ -142,22 +142,24 @@ Une implémentation évidente est de représenter va_list par un pointeur dans l
 
 ## TABLEAU DES FONCTIONNALITES
 
-A gérer,Conflits 1,Conflits 2,Conflits 3,Conflits 4,%,d,i,o,u,x,X,f,c,s,p,b,F,Files,Column
-hh (char),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-h (short),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-I (long int),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-II (long long int),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-L (long double),,,,,,,,,,,,,,,,,,,
-j (intmax_t),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-t (ptrdiff_t),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-z (size_t),,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,,,,,,,
-precision,,,,,,XXX,XXX,XXX,XXX,XXX,XXX,,XXX,XXX,XXX,,,,
-width,,,,,XXX,XXX,XXX,XXX,XXX,XXX,XXX,,XXX,XXX,XXX,,,,
-espace (' '),,,,,,XXX,XXX,XXX,XXX,,,,,,,,,,
-#,,,,,,,,XXX,XXX,XXX,XXX,,,,,,,,
-0,,,,,XXX,XXX,XXX,XXX,XXX,XXX,XXX,,XXX,XXX,XXX,,,,
--,,,,,XXX,XXX,XXX,XXX,XXX,XXX,XXX,,XXX,XXX,XXX,,,,
-+,,,,,,XXX,XXX,XXX,XXX,,,,,,,,,,
+|A gérer           |Conflits 1|Conflits 2|Conflits 3|Conflits 4|%  |d  |i  |o  |u  |x  |X  |f  |c  |s  |p  |b  |F  |Files|Column|
+|------------------|----------|----------|----------|----------|---|---|---|---|---|---|---|---|---|---|---|---|---|-----|------|
+|hh (char)         |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|h (short)         |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|I (long int)      |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|II (long long int)|          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|L (long double)   |          |          |          |          |   |   |   |   |   |   |   |   |   |   |   |   |   |     |      |
+|j (intmax_t)      |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|t (ptrdiff_t)     |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|z (size_t)        |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|precision         |          |          |          |          |   |XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
+|width             |          |          |          |          |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
+|espace (' ')      |          |          |          |          |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |     |      |
+|#                 |          |          |          |          |   |   |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
+|0                 |          |          |          |          |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
+|-                 |          |          |          |          |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
+|+                 |          |          |          |          |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |     |      |
+
 
 ### Syntaxe de spécification de format : fonctions printf
 
