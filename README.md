@@ -24,9 +24,8 @@ doit quitter de façon inattendue (Segmentation fault, etc...).
 à notre main de test pour vous donner votre résultat.  
 • Vous devez rendre, à la racine de votre dépôt de rendu, un fichier auteur contenant
 votre login suivi d’un ’\n’ :  
-``**$>cat -e auteur``  
-``xlogin``  
-``$**  ``  
+``**$>cat -e auteur  
+xlogin``    
 • Vous avez le droit d’utiliser les fonctions suivantes :  
 ◦ write  
 ◦ malloc  
@@ -86,7 +85,7 @@ ISO quelconque, etc.
 
 ## **LES FONCTIONS VARIADIQUE**
 
-Une **fonction variadique** est une fonction d'[arité](https://fr.wikipedia.org/wiki/Arit%C3%A9) indéfinie, c'est-à-dire qui accepte un nombre variable de [paramètres](https://fr.wikipedia.org/wiki/Param%C3%A8tre_(programmation_informatique)).
+Une **fonction variadique** est une fonction [d'arité](https://fr.wikipedia.org/wiki/Arit%C3%A9) indéfinie, c'est-à-dire qui accepte un nombre variable de [paramètres](https://fr.wikipedia.org/wiki/Param%C3%A8tre_(programmation_informatique)).
 
 Le langage C permet la définition de fonctions variadiques.
 
@@ -170,35 +169,35 @@ Une implémentation évidente est de représenter va_list par un pointeur dans l
 
 ### 1 - type % d i o u x X f c s p b F
 
-c (char) 
+`c` (char) 
 
-s (string) 
+`s` (string) 
 
-p (pointer)
+`p` (pointer)
 
-d (d = decimal avec base 10)
+`d` (d = decimal avec base 10)
 
-i (i = dec, oct, hexa automatically detection) 
+`i` (i = dec, oct, hexa automatically detection) 
 
-o (o = octal form) 
+`o` (o = octal form) 
 
-u (u =  unsigned decimal) 
+`u` (u =  unsigned decimal) 
 
-x (x = hexa format) 
+`x` (x = hexa format) 
 
-X (X = hexa format with letter in uppercase)
+`X` (X = hexa format with letter in uppercase)
 
-f (f = float nombre a virgule) → avec flag l et L
+`f` (f = float nombre a virgule) → avec flag l et L
 
-%% (for print %)
+`%%` (for print %)
 
-### Bonus :
+### Bonus Spécifiers :
 
-b (b = affiche en binaire)
+`b` (b = affiche en binaire)
 
-r (r = affiche une chaine avec des caractères non imprimables)
+`r` (r = affiche une chaine avec des caractères non imprimables)
 
-k (k = affiche une date a un format ISO quelconque)
+`k` (k = affiche une date a un format ISO quelconque)
 
 Gestion de modifieurs pour gérer les couleurs, les fd ou des choses fun comme ça :
 
@@ -206,15 +205,15 @@ Gestion de modifieurs pour gérer les couleurs, les fd ou des choses fun comme �
 
 ### 2 - [size] (modificateur de longueur)
 
-hh - Pour spécifier char unsigned - char | Avec le spécificateur de type d, i, o, u, x ou X
+`hh` - Pour spécifier char unsigned - char | Avec le spécificateur de type d, i, o, u, x ou X
 
-h - Pour spécifier short int - short unsigned int | Avec le spécificateur de type d, i, o, u, x ou X
+`h` - Pour spécifier short int - short unsigned int | Avec le spécificateur de type d, i, o, u, x ou X
 
-l - Pour spécifier long int - long unsigned int | Avec le spécificateur de type d, i, o, u, x ou X et f
+`l` - Pour spécifier long int - long unsigned int | Avec le spécificateur de type d, i, o, u, x ou X et f
 
-ll - Pour spécifier long long int - unsigned long long int | Avec le spécificateur de type d, i, o, u, x ou X
+`ll` - Pour spécifier long long int - unsigned long long int | Avec le spécificateur de type d, i, o, u, x ou X
 
-L - Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F, g ou G
+`L` - Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F, g ou G
 
 ---
 
@@ -261,7 +260,7 @@ Une valeur width manquante ou petite dans une spécification de conversion n’e
 
 `+` - **Signification :** Utilisez un signe (+ ou -) pour préfixer la valeur de sortie s’il s’agit d’un type signé. | **Par défaut :** Le signe apparaît uniquement pour les valeurs signées négatives (-).
 
-0 - **Signification :** Si width est préfixé par 0, des zéros non significatifs sont ajoutés jusqu’à ce que la largeur minimale soit atteinte. Si 0 et - apparaissent, le 0 est ignoré(erreur). 
+`0` - **Signification :** Si width est préfixé par 0, des zéros non significatifs sont ajoutés jusqu’à ce que la largeur minimale soit atteinte. Si 0 et - apparaissent, le 0 est ignoré(erreur). 
 
 Si 0 est spécifié pour un format entier (i, u, x, X, o, d) et qu’une spécification de précision est également présente (par exemple, %04.d), le 0 est ignoré. 
 
@@ -286,5 +285,5 @@ espace (' ') - **Signification :** Utilisez un espace pour préfixer la valeur d
 
 ### Bonus :
 
-`*` - Rajouter le nombre d'espace avant ce qu'il faut ecrire ft_printf("%*c", 12, 'a');
-Ansi color - Ajout de la gestion des couleurs grace au code ANSI.
+`*` - Rajouter le nombre d'espace avant ce qu'il faut ecrire ft_printf("%*c", 12, 'a');  
+`Ansi color` - Ajout de la gestion des couleurs grace au code ANSI.
