@@ -92,7 +92,7 @@ Le langage C permet la définition de fonctions variadiques.
 
 Les exemples les plus connus sont les fonctions [standard](https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_standard_du_C) d'entrée-sortie `printf` et `scanf`.
 
-## SYNOPSIS
+## SYNOPSISFt_printf
 
 **#include <[stdarg.h](file:///usr/include/stdarg.h)>**
 
@@ -196,9 +196,7 @@ ll Pour spécifier long long int - unsigned long long int | Avec le spécificate
 
 L Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F, g ou G
 
-![README_src/size_for_printf.png](Ft_printf/size_for_printf.png)
-
-<img src=\"./README_src/size_for_printf.png\" style=\"margin: 0; vertical-align: bottom;\">\n",
+![./README_src/size_for_printf.png](./README_src/size_for_printf.png)
 
 ### 3 - [.precision] - Spécification de précision
 
