@@ -54,20 +54,20 @@ stdarg -- variable argument lists``
 
 **Partie obligatoire**
 
-%[flags] [width] [.precision] [size] type
-• Vous devez recoder la fonction printf de la libc
+%[flags] [width] [.precision] [size] type  
+• Vous devez recoder la fonction printf de la libc.  
 • Votre fonction s’appelera ft_printf et sera prototypée de la même façon que
-printf
-• Vous ne ferez pas la gestion de buffer présente dans la fonction printf de la libc.
-• Vous devez gérer les conversions suivantes : csp(char, string, pointer)
-• Vous devez gérer les conversions suivantes : diouxX(d = decimal avec base 10, i = dec, oct, hexa   avec les flags hh, h, l, ll
-• Vous devez gérer la conversion suivante : f avec les flags l et L
-• Vous devez gérer le %%
-• Vous devez gérer les flags #0-+ et espace
-• Vous devez gérer la taille minimum du champ
-• Vous devez gérer la précision
+printf.  
+• Vous ne ferez pas la gestion de buffer présente dans la fonction printf de la libc.  
+• Vous devez gérer les conversions suivantes : csp(char, string, pointer).  
+• Vous devez gérer les conversions suivantes : diouxX(d = decimal avec base 10, i = dec, oct, hexa   avec les flags hh, h, l, ll.  
+• Vous devez gérer la conversion suivante : f avec les flags l et L.  
+• Vous devez gérer le %%.  
+• Vous devez gérer les flags #0-+ et espace.  
+• Vous devez gérer la taille minimum du champ.  
+• Vous devez gérer la précision.  
 
-man 3 printf / man 3 stdarg
+``man 3 printf / man 3 stdarg``
 
 **Partie bonus**
 
