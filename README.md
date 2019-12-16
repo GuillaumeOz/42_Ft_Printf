@@ -275,7 +275,7 @@ Si il n'y a pas de precision et que le specifier n'est pas égale a "cf%" **OU**
 
 Si 0 est spécifié pour le format à virgule flottante a ou A, des zéros non significatifs sont ajoutés en préfixe à la mantisse, après le préfixe 0x ou 0X.  | **Par défaut :** Aucun remplissage.
 
-espace (' ') - **Signification :** Utilisez un espace pour préfixer la valeur de sortie si elle est signée et positive. L’espace est ignoré si l’espace et des indicateurs + apparaissent. | **Par défaut :** Aucun espace ne s’affiche.
+`espace (' ')` - **Signification :** Utilisez un espace pour préfixer la valeur de sortie si elle est signée et positive. L’espace est ignoré si l’espace et des indicateurs + apparaissent. | **Par défaut :** Aucun espace ne s’affiche.
 
 `#` - **Signification :**
 
