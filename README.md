@@ -34,11 +34,11 @@ votre login suivi d’un ’\n’ :
 ◦ exit  
 ◦ les fonctions du man 3 stdarg :  
 
-NAME
-stdarg -- variable argument lists
+``NAME
+stdarg -- variable argument lists``
 
-SYNOPSIS
-#include <stdarg.h>
+``SYNOPSIS
+#include <stdarg.h>``
 
     void
      va_start(va_list ap, last);
