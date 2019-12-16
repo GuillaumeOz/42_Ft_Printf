@@ -16,22 +16,22 @@ faire parce que vous ne pouvez pas vous relire, non ?
 
 **Consignes générales**
 
-• La fonction doit s’appeler ft_printf.
-• Votre projet doit être à la Norme.
+• La fonction doit s’appeler ft_printf.  
+• Votre projet doit être à la Norme.  
 • Vous devez gérer les erreurs de façon sensible. En aucun cas votre programme ne
-doit quitter de façon inattendue (Segmentation fault, etc...)
+doit quitter de façon inattendue (Segmentation fault, etc...).  
 • Vous devez fournir un Makefile qui compilera une libftprintf.a. Cette lib sera linké
-à notre main de test pour vous donner votre résultat.
+à notre main de test pour vous donner votre résultat.  
 • Vous devez rendre, à la racine de votre dépôt de rendu, un fichier auteur contenant
-votre login suivi d’un ’\n’ :
-**$>cat -e auteur
-xlogin$**
-• Vous avez le droit d’utiliser les fonctions suivantes :
-◦ write
-◦ malloc
-◦ free
-◦ exit
-◦ les fonctions du man 3 stdarg :
+votre login suivi d’un ’\n’ :  
+**$>cat -e auteur   
+xlogin$**  
+• Vous avez le droit d’utiliser les fonctions suivantes :  
+◦ write  
+◦ malloc  
+◦ free  
+◦ exit  
+◦ les fonctions du man 3 stdarg :  
 
 NAME
 stdarg -- variable argument lists
