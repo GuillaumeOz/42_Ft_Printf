@@ -142,24 +142,27 @@ Une implémentation évidente est de représenter va_list par un pointeur dans l
 
 ## TABLEAU DES FONCTIONNALITES
 
-|A gérer           |%  |d  |i  |o  |u  |x  |X  |f  |c  |s  |p  |b  |F  |Files|Column|
-|------------------|---|---|---|---|---|---|---|---|---|---|---|---|---|-----|------|
-|hh (char)         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|h (short)         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|I (long int)      |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|II (long long int)|   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|L (long double)   |   |   |   |   |   |   |   |   |   |   |   |   |   |     |      |
-|j (intmax_t)      |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|t (ptrdiff_t)     |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|z (size_t)        |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|precision         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
-|width             |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
-|espace (' ')      |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |     |      |
-|#                 |   |   |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |     |      |
-|0                 |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
-|-                 |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |     |      |
-|+                 |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |     |      |
+---
 
+|A gérer           |%  |d  |i  |o  |u  |x  |X  |f  |c  |s  |p  |b  |F  |
+|------------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|hh (char)         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|h (short)         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|I (long int)      |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|II (long long int)|   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|L (long double)   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|j (intmax_t)      |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|t (ptrdiff_t)     |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|z (size_t)        |   |XXX|XXX|XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|precision         |   |XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |
+|width             |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |
+|espace (' ')      |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |
+|#                 |   |   |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |
+|0                 |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |
+|-                 |XXX|XXX|XXX|XXX|XXX|XXX|XXX|   |XXX|XXX|XXX|   |   |
+|+                 |   |XXX|XXX|XXX|XXX|   |   |   |   |   |   |   |   |
+
+---
 
 ### Syntaxe de spécification de format : fonctions printf
 
@@ -203,17 +206,21 @@ Gestion de modifieurs pour gérer les couleurs, les fd ou des choses fun comme �
 
 ### 2 - [size] (modificateur de longueur)
 
-hh Pour spécifier char unsigned - char | Avec le spécificateur de type d, i, o, u, x ou X
+hh - Pour spécifier char unsigned - char | Avec le spécificateur de type d, i, o, u, x ou X
 
-h Pour spécifier short int - short unsigned int | Avec le spécificateur de type d, i, o, u, x ou X
+h - Pour spécifier short int - short unsigned int | Avec le spécificateur de type d, i, o, u, x ou X
 
-l Pour spécifier long int - long unsigned int | Avec le spécificateur de type d, i, o, u, x ou X et f
+l - Pour spécifier long int - long unsigned int | Avec le spécificateur de type d, i, o, u, x ou X et f
 
-ll Pour spécifier long long int - unsigned long long int | Avec le spécificateur de type d, i, o, u, x ou X
+ll - Pour spécifier long long int - unsigned long long int | Avec le spécificateur de type d, i, o, u, x ou X
 
-L Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F, g ou G
+L - Pour spécifier long double | Avec le spécificateur de type a, A, e, E, f, F, g ou G
+
+---
 
 ![./README_src/size_for_printf.png](./README_src/size_for_printf.png)
+
+---
 
 ### 3 - [.precision] - Spécification de précision
 
@@ -233,6 +240,8 @@ Le caractère type détermine soit l’interprétation de precision, soit la pr�
 
 ![./README_src/Capture_decran_2019-07-08_a_19.31.15.png](./README_src/Capture_decran_2019-07-08_a_19.31.15.png)
 
+---
+
 ### 4 - [width] - Spécification de largeur
 
 Dans une spécification de conversion, le champ facultatif de spécification de largeur apparaît après n’importe quel caractère d’*indicateur*. L’argument *width* est un entier décimal non négatif qui contrôle le nombre minimal de caractères qui sont générés. Si le nombre de caractères dans la valeur de sortie est inférieur à la longueur spécifiée, des espaces sont ajoutés à gauche ou à droite des valeurs, selon que l’indicateur d’alignement à gauche (**-**) est spécifié ou non, jusqu’à ce que la largeur minimale soit atteinte. Si *width* est préfixé par 0, des zéros non significatifs sont ajoutés aux conversions en entiers ou en nombres à virgule flottante jusqu’à ce que la largeur minimale soit atteinte, sauf en cas de conversion en valeur infinie ou NaN.
@@ -248,15 +257,15 @@ Une valeur width manquante ou petite dans une spécification de conversion n’e
 
 ### 5 - [flags]
 
- -      **Signification :** Aligner à gauche le résultat selon la largeur de champ donnée. | **Par défaut :** Aligner à droite.
+`-` - **Signification :** Aligner à gauche le résultat selon la largeur de champ donnée. | **Par défaut :** Aligner à droite.
 
- +      **Signification :** Utilisez un signe (+ ou -) pour préfixer la valeur de sortie s’il s’agit d’un type signé. | **Par défaut :** Le signe apparaît uniquement pour les valeurs signées négatives (-).
+`+` - **Signification :** Utilisez un signe (+ ou -) pour préfixer la valeur de sortie s’il s’agit d’un type signé. | **Par défaut :** Le signe apparaît uniquement pour les valeurs signées négatives (-).
 
-0      **Signification :** Si width est préfixé par 0, des zéros non significatifs sont ajoutés jusqu’à ce que la largeur minimale soit atteinte. Si 0 et - apparaissent, le 0 est ignoré(erreur). 
+0 - **Signification :** Si width est préfixé par 0, des zéros non significatifs sont ajoutés jusqu’à ce que la largeur minimale soit atteinte. Si 0 et - apparaissent, le 0 est ignoré(erreur). 
 
 Si 0 est spécifié pour un format entier (i, u, x, X, o, d) et qu’une spécification de précision est également présente (par exemple, %04.d), le 0 est ignoré. 
 
-" → ZERO CONDITION pour que le pading passe de ' ' a '0'
+##### ZERO CONDITION : pour que le pading passe de ' ' a '0'
 Si le flag ZERO est parsé et que le flag MINUS ne la pas été :
 
 Si il n'y a pas de precision et que le specifier n'est pas égale a "cf%" **OU** il n'y a pas de precision et que le specifier est égale a "cf%" **OU** il y a une precision et le specifier est égale a "cf%"
@@ -267,9 +276,9 @@ Si il n'y a pas de precision et que le specifier n'est pas égale a "cf%" **OU**
 
 Si 0 est spécifié pour le format à virgule flottante a ou A, des zéros non significatifs sont ajoutés en préfixe à la mantisse, après le préfixe 0x ou 0X.  | **Par défaut :** Aucun remplissage.
 
-espace (' ')      **Signification :** Utilisez un espace pour préfixer la valeur de sortie si elle est signée et positive. L’espace est ignoré si l’espace et des indicateurs + apparaissent. | **Par défaut :** Aucun espace ne s’affiche.
+espace (' ') - **Signification :** Utilisez un espace pour préfixer la valeur de sortie si elle est signée et positive. L’espace est ignoré si l’espace et des indicateurs + apparaissent. | **Par défaut :** Aucun espace ne s’affiche.
 
-#      **Signification :**
+`#` - **Signification :**
 
 - Quand il est utilisé avec le format o, x ou X, l’indicateur # utilise 0, 0x ou 0X, respectivement, pour préfixer une valeur de sortie différente de zéro. | **Par défaut :** Aucun espace ne s’affiche.
 - Quand il est utilisé avec le format e, E, f, F, a ou A, l’indicateur # impose à la valeur de sortie de contenir une virgule décimale. | **Par défaut :** La virgule décimale apparaît uniquement si des chiffres la suivent.
@@ -277,4 +286,5 @@ espace (' ')      **Signification :** Utilisez un espace pour préfixer la valeu
 
 ### Bonus :
 
-\*     Rajouter le nombre d'espace avant ce qu'il faut ecrire ft_printf("%*c", 12, 'a');
+`*` - Rajouter le nombre d'espace avant ce qu'il faut ecrire ft_printf("%*c", 12, 'a');
+Ansi color - Ajout de la gestion des couleurs grace au code ANSI.
