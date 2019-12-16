@@ -73,14 +73,14 @@ printf.
 
 Voici quelques idées de bonus intéressants à réaliser, voire même utiles. Vous pouvez
 évidemment ajouter des bonus de votre invention, qui seront évalués à la discrétion de
-vos correcteurs.
+vos correcteurs.  
 • Gestion de conversions plus délicates : e, g. Attention votre flag L doit être étendu
-à ces deux conversions pour que le bonus soit comptabilisé !
-• Gestion de flags plus delicats : *, $, ’
+à ces deux conversions pour que le bonus soit comptabilisé !  
+• Gestion de flags plus delicats : *, $, ’.  
 • Gestion de flags non existants : %b pour afficher en binaire, %r pour afficher une
 chaine avec des caractères non imprimables, %k pour afficher une date à un format
-ISO quelconque, etc.
-• Gestion de modifieurs pour gérer les couleurs, les fd ou des choses fun comme ça :)
+ISO quelconque, etc.  
+• Gestion de modifieurs pour gérer les couleurs, les fd ou des choses fun comme ça :).  
 
     printf("Le fichier{cyan}%s{eoc} contient : {red}%s{eoc}", filename, str);
 
