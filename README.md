@@ -24,8 +24,10 @@ doit quitter de façon inattendue (Segmentation fault, etc...).
 à notre main de test pour vous donner votre résultat.  
 • Vous devez rendre, à la racine de votre dépôt de rendu, un fichier auteur contenant
 votre login suivi d’un ’\n’ :  
-``**$>cat -e auteur  
-xlogin``    
+
+    $>cat -e auteur
+    xlogin
+
 • Vous avez le droit d’utiliser les fonctions suivantes :  
 ◦ write  
 ◦ malloc  
